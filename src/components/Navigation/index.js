@@ -5,43 +5,45 @@ import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
 
 const Navigation = () => (
-    <div>
+    <div className="headerStyle">
+    
       <AuthUserContext.Consumer>
         {authUser =>
           authUser ? <NavigationAuth /> : <NavigationNonAuth />
         }
       </AuthUserContext.Consumer>
+      <h1><span style={{color: 'blue', fontStyle: 'italic'}}>e</span>Bills</h1>
     </div>
 );
 
 const NavigationAuth = () => (
-<ul>
-    <li>
+
+    <ul>
     <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
+    
+    
     <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
+    
+    
     <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ADMIN}>Admin</Link>
-    </li>
-    <li>
+    
+    
+    <Link to={ROUTES.ADMIN}>Admin</Link>
+    
+    
     <SignOutButton />
-    </li>
-</ul>
+    </ul>
 );
 const NavigationNonAuth = () => (
-<ul>
-    <li>
+
+    <ul>
     <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
+    
     <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-</ul>
+    </ul>
+
 );
+
+
 
 export default Navigation;

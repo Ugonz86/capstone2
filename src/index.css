@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerStyle {
+  display: table;
+  margin-top: 25px;
+  color: #333;
+  width: 100%;
+}
+
+a {
+  margin: 20px;
+  text-decoration: none;
+  color: #333;
+}
+a:hover, a:focus, a:active {
+  color: blue;
+}
+
+#root {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  border: none;
+
+}

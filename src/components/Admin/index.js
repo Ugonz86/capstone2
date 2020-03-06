@@ -34,7 +34,7 @@ class AdminPage extends Component {
 
   render() {
     const { users, loading } = this.state;
-    
+
     return (
         <div>
         <h1>Admin</h1>
