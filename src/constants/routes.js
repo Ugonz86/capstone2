@@ -5,3 +5,6 @@ export const HOME = '/home';
 export const ACCOUNT = '/account';
 export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
+export const COMPANY = '/company';
+export const COMPANYLIST = '/companylist';
+export const NEWCOMPANY = '/newcompany';

@@ -6,41 +6,39 @@ import { AuthUserContext } from '../Session';
 
 const Navigation = () => (
     <div className="headerStyle">
-    
+    <Link style={{ float: 'left', fontSize: '25px' }} to={ROUTES.LANDING}><span style={{ color: 'blue', fontStyle: 'italic'}}>e</span>Bills</Link>
       <AuthUserContext.Consumer>
         {authUser =>
           authUser ? <NavigationAuth /> : <NavigationNonAuth />
         }
       </AuthUserContext.Consumer>
-      <h1><span style={{color: 'blue', fontStyle: 'italic'}}>e</span>Bills</h1>
+      
     </div>
 );
 
 const NavigationAuth = () => (
 
-    <ul>
-    <Link to={ROUTES.LANDING}>Landing</Link>
-    
-    
-    <Link to={ROUTES.HOME}>Home</Link>
-    
+    <div style={{  textAlign: 'center', marginTop:'25px'}}>
+
+
+    {/* <Link style={{  textAlign: 'left', fontSize: '25px'}} to={ROUTES.LANDING}><span style={{color: 'blue', fontStyle: 'italic'}}>e</span>Bills</Link> */}
+
+    <Link style={{}} to={ROUTES.HOME}>Home</Link>
     
     <Link to={ROUTES.ACCOUNT}>Account</Link>
     
-    
     <Link to={ROUTES.ADMIN}>Admin</Link>
+
+    <Link to={ROUTES.COMPANYLIST}>Companies</Link>
     
     
     <SignOutButton />
-    </ul>
+    </div>
 );
 const NavigationNonAuth = () => (
-
-    <ul>
-    <Link to={ROUTES.LANDING}>Landing</Link>
-    
-    <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </ul>
+    <p>
+        <Link style={{marginLeft: '75%'}} to={ROUTES.SIGN_IN}>Sign In</Link>
+    </p>
 
 );
 

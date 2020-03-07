@@ -4,10 +4,13 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 import Firebase, { FirebaseContext } from './components/Firebase';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
-    <App />
+    <HashRouter>
+        <App />
+    </HashRouter>
   </FirebaseContext.Provider>,
   document.getElementById('root'),
 );

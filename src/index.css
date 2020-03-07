@@ -14,10 +14,11 @@ code {
 
 .headerStyle {
   display: table;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   color: #333;
   width: 100%;
 }
+
 
 a {
   margin: 20px;
@@ -34,6 +35,9 @@ a:hover, a:focus, a:active {
 }
 
 button {
-  border: none;
+
+}
+
+button:hover {
 
 }
