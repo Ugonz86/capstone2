@@ -5,20 +5,20 @@ import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
 
 const Navigation = () => (
-    <div className="headerStyle">
-    <Link style={{ float: 'left', fontSize: '25px' }} to={ROUTES.LANDING}><span style={{ color: 'blue', fontStyle: 'italic'}}>e</span>Bills</Link>
-      <AuthUserContext.Consumer>
-        {authUser =>
-          authUser ? <NavigationAuth /> : <NavigationNonAuth />
-        }
-      </AuthUserContext.Consumer>
+  <div className="headerStyle">
+    <Link style={{ float: 'left', fontSize: '25px', fontWeight: 'bold' }} to={ROUTES.LANDING}><span style={{ color: '#4265ff', fontWeight: 'bold', fontStyle: 'italic'}}>e</span>Bills</Link>
+    <AuthUserContext.Consumer>
+      {authUser =>
+        authUser ? <NavigationAuth /> : <NavigationNonAuth />
+      }
+    </AuthUserContext.Consumer>
       
-    </div>
+  </div>
 );
 
 const NavigationAuth = () => (
 
-    <div style={{  textAlign: 'center', marginTop:'25px'}}>
+  <div style={{  textAlign: 'center', marginTop:'25px'}}>
 
 
     {/* <Link style={{  textAlign: 'left', fontSize: '25px'}} to={ROUTES.LANDING}><span style={{color: 'blue', fontStyle: 'italic'}}>e</span>Bills</Link> */}
@@ -27,18 +27,20 @@ const NavigationAuth = () => (
     
     <Link to={ROUTES.ACCOUNT}>Account</Link>
     
-    <Link to={ROUTES.ADMIN}>Admin</Link>
+    {/* <Link to={ROUTES.ADMIN}>Admin</Link> */}
 
-    <Link to={ROUTES.COMPANYLIST}>Companies</Link>
+    <Link to={ROUTES.COMPANYLIST}>Utilities</Link>
+
+    <Link to={ROUTES.PAYMENTS}>Payments</Link>
     
     
     <SignOutButton />
-    </div>
+  </div>
 );
 const NavigationNonAuth = () => (
-    <p>
-        <Link style={{marginLeft: '75%'}} to={ROUTES.SIGN_IN}>Sign In</Link>
-    </p>
+  <p>
+    <Link style={{marginLeft: '75%'}} to={ROUTES.SIGN_IN}>Sign In</Link>
+  </p>
 
 );
 

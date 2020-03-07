@@ -2,33 +2,64 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Company from '../Company';
 import PropTypes from 'prop-types';
-import { v4 } from 'uuid';
 import * as ROUTES from '../../constants/routes';
+// import { v4 } from 'uuid';
 
 function CompanyList(props){
 
+  var masterCompanyList = [
+
+ {
+    name:'Seattle Light',
+    utility:'Electricity',
+    contact:'www.seattleLight.com',
+   
+  },
+{
+    name:'Seattle Water',
+    utility:'Water',
+    contact:'www.seattleWater.com',
+  
+  },
+{
+    name:'Seattle Farm',
+    utility:'Insurance',
+    contact:'www.seattleFarm.com',
+  
+  },
+ {
+    name:'Seattle Auto',
+    utility:'Car Dealer',
+    contact: 'www.seattleAuto.com'
+  },
+ 
+ {
+    name:'Seattle Fi',
+    utility:'Internet',
+    contact:'www.seattleFi.com',
+
+  }
+];
+    
   return (
     <div>
+    <h1>Utilities</h1>
+    <p><Link style={{fontSize: '30px'}} to={ROUTES.NEWCOMPANY}>+</Link></p>
       <hr/>
-      {Object.keys(props.companyList).map(function(companyId) {
-        var company = props.companyList[companyId];
-        return <Company
-          name={company.name}
-          utility={company.utility}
-          contact={company.contact}
-          key={companyId}
-          companyId={companyId}
-          onCompanySelection={props.onCompanySelection}/>;
-      })}
-      <p><Link to={ROUTES.NEWCOMPANY}>Create new company</Link></p>
+      
+      {masterCompanyList.map((company, index) =>
+          <Company name={company.name}
+            utility={company.utility}
+            contact={company.contact} 
+            key={index}/>
+        )}
     </div>
-    
   );
 }
 
 CompanyList.propTypes = {
   companyList: PropTypes.array,
-  onCompanySelection: PropTypes.func
+
 };
 
 export default CompanyList;

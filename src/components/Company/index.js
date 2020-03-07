@@ -16,8 +16,7 @@ Company.propTypes = {
   utility: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   contact: PropTypes.string.isRequired,
-  companyId: PropTypes.string.isRequired,
-  onCompanySelection: PropTypes.func,
+  companyId: PropTypes.string.isRequired
 };
 
 export default Company;

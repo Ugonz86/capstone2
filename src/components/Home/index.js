@@ -1,12 +1,14 @@
 import React from 'react';
-import { withAuthorization } from '../Session';
+// import { Link } from 'react-router-dom';
+// import * as ROUTES from '../../constants/routes';
 
 const HomePage = () => (
   <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
+    <br/>
+    <h1>All Your Personal Payments in One Place.</h1>
+    <h3>Pay any invoice with a bank transferm credit or debit card for FREE.</h3>
+    <br/>
   </div>
 );
 
-const condition = authUser => !!authUser;
-export default withAuthorization(condition)(HomePage);
+export default HomePage;
