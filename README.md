@@ -1,5 +1,5 @@
 ### Component Structure
-![Components](components.png)
+![Components](_components.png)
 --
 
 
