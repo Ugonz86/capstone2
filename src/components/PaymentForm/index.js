@@ -190,7 +190,9 @@ export default class PaymentForm extends Component {
 
   render(){
     return (
+        
       <div className="container">
+        <h1>Make a payment</h1><br/>
         <div id="form-container">
         
           <div id="sq-walletbox">
@@ -226,6 +228,7 @@ export default class PaymentForm extends Component {
                   onClick={this.requestCardNonce}>Pay</button>
         </div>
         <p style={styles.center} id="error"></p>
+        <br/>
       </div>
     )
   }

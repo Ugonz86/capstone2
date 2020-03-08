@@ -32,16 +32,18 @@
     border: 0;
   }
   
-  .container {
-    margin-top: 300px;
-  }
-  
+
   #form-container {
+    padding: 30px;
+    border-radius: 4px;
+    margin-top: 100px;
+    background-color: #edeff5;
+    
     position: relative;
     width: 380px;
     margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
   }
   
   .label {
@@ -115,10 +117,12 @@
   }
    #name {
      border: solid 1px lightgrey;
+     background-color: white;
    }
 
    #sq-expiration-date, #sq-cvv, #sq-card-number, #name, #sq-postal-code {
     margin-bottom: 16px;
+    background-color: white;
    }
   
   /* Customize the Apple Pay on the Web button */

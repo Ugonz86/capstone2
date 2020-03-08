@@ -16,7 +16,7 @@ function NewCompanyForm(props){
   }
 
   return (
-    <div>
+    <div style={{backgroundColor: '#edeff5'}}>
       <h1>Add A New Company</h1>
       <form onSubmit={handleNewCompanyFormSubmission}>
         <input

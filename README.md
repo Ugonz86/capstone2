@@ -1,3 +1,8 @@
+### Component Structure
+![Components](components.png)
+--
+
+
 
 ## [View firebased deployed webapp here](https://ebills-2dd61.firebaseapp.com/)
 

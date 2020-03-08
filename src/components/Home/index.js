@@ -3,7 +3,7 @@ import React from 'react';
 // import * as ROUTES from '../../constants/routes';
 
 const HomePage = () => (
-  <div>
+  <div style={{backgroundColor: '#edeff5'}}>
     <br/>
     <h1>All Your Personal Payments in One Place.</h1>
     <h3>Pay any invoice with a bank transferm credit or debit card for FREE.</h3>

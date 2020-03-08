@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 
 const Landing = () => (
-  <div>
+  <div style={{backgroundColor: '#edeff5'}}>
     <br/>
     <h2>All Your Personal Payments in One Place</h2>
     <p>Pay any invoice with a bank transferm credit or debit card for FREE.</p>

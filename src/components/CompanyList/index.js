@@ -42,7 +42,7 @@ function CompanyList(props){
 ];
     
   return (
-    <div>
+    <div style={{backgroundColor: '#edeff5'}}>
     <h1>Utilities</h1>
     <p><Link style={{fontSize: '30px'}} to={ROUTES.NEWCOMPANY}>+</Link></p>
       <hr/>
