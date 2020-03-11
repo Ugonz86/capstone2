@@ -11,10 +11,7 @@ import AccountPage from '../Account';
 import Payments from '../Payments';
 import { v4 } from 'uuid';
 import CompanyList from '../CompanyList';
-
-// import '../App.css';
 import PaymentForm from '../PaymentForm';
-
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
 import NewCompanyForm from '../NewCompanyForm';
@@ -65,7 +62,7 @@ class App extends React.Component {
       <Router>
         <div>
         
-          <Navigation />
+        <Navigation />
           <Switch>
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
             <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />

@@ -7,7 +7,7 @@ import { AuthUserContext } from '../Session';
 const Navigation = () => (
   <div className="headerStyle">
     <Link style={{ float: 'left', fontSize: '25px', fontWeight: 'bold' }} to={ROUTES.LANDING}><span style={{ color: '#4265ff', fontWeight: 'bold', fontStyle: 'italic'}}>e</span>Bills</Link>
-    <Link style={{float: 'right'}} to={ROUTES.SIGN_IN}>Sign In</Link>
+    {/* <Link style={{float: 'right'}} to={ROUTES.SIGN_IN}>Sign In</Link> */}
     <AuthUserContext.Consumer>
       {authUser =>
         authUser ? <NavigationAuth /> : <NavigationNonAuth />
@@ -39,9 +39,9 @@ const NavigationAuth = () => (
   </div>
 );
 const NavigationNonAuth = () => (
-  <p>
-    {/* <Link style={{right: '0'}} to={ROUTES.SIGN_IN}>Sign In</Link> */}
-  </p>
+ 
+    <Link style={{float: 'right'}} to={ROUTES.SIGN_IN}>Sign In</Link>
+
 
 );
 
