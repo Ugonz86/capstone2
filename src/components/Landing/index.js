@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
+import Fade from 'react-reveal/Fade';
 
 const Landing = () => (
-  <div style={{backgroundColor: '#edeff5'}}>
-    <br/>
-    <h2>All Your Personal Payments in One Place</h2>
-    <p>Pay any invoice with a bank transferm credit or debit card for FREE.</p>
-    <br/>
-    <p><Link to={ROUTES.SIGN_UP}>Sign Up Now</Link></p>
+  <div style={{marginTop: '200px'}}>
+    <Fade top>
+      <Link style={{  textAlign: 'left', fontSize: '60px'}} to={ROUTES.HOME}>Welcome!</Link>
+    </Fade>
   </div>
 );
+
+
+
 
 
 
