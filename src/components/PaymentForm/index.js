@@ -28,9 +28,9 @@ const styles = {
     display: 'block',
     float: 'right'
   },
-//   center: {
-//     textAlign: 'center'
-//   }
+  center: {
+    textAlign: 'center'
+  }
 }
 
 export default class PaymentForm extends Component {
@@ -190,11 +190,9 @@ export default class PaymentForm extends Component {
 
   render(){
     return (
-        
       <div className="container">
-        <h1>Make a payment</h1><br/>
         <div id="form-container">
-        
+        <h1>Make a payment</h1>
           <div id="sq-walletbox">
             <button style={{display: (this.state.applePay) ? 'inherit': 'none'}}
                     className="wallet-button"

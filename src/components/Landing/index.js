@@ -8,7 +8,7 @@ const Landing = () => (
  
   <div style={{marginTop: '200px'}}>
     <Fade top>
-      <Link style={{  textAlign: 'left', fontSize: '60px'}} to={ROUTES.HOME}>Welcome!</Link>
+      <Link style={{ textAlign: 'left', fontSize: '60px' }} to={ROUTES.HOME}>Welcome!</Link>
     </Fade>
   </div>
  

@@ -14,6 +14,7 @@ code {
 
 .headerStyle {
   display: table;
+  margin-bottom: 20px;
   /* margin-top: 25px; */
   color: #333;
   width: 100%;

@@ -15,6 +15,7 @@ import PaymentForm from '../PaymentForm';
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
 import NewCompanyForm from '../NewCompanyForm';
+import Edit from '../Company/Edit';
 
 class App extends React.Component {
 
@@ -23,12 +24,49 @@ class App extends React.Component {
 
     const newMasterCompanyList = {};
 
+    let newCompanyId = v4();
+    newMasterCompanyList[newCompanyId] = {
+      name:'Seattle Light',
+      utility:'Electricity',
+      contact:'www.seattleLight.com'
+    };
+
+    newCompanyId = v4();
+    newMasterCompanyList[newCompanyId] = {
+      name:'Seattle Water',
+      utility:'Water',
+      contact:'www.seattleWater.com'
+    };
+
+    newCompanyId = v4();
+    newMasterCompanyList[newCompanyId] = {
+      name:'Seattle Farm',
+      utility:'Insurance',
+      contact:'www.seattleFarm.com'
+    };
+
+    newCompanyId = v4();
+    newMasterCompanyList[newCompanyId] = {
+      name:'Seattle Auto',
+      utility:'Car Dealer',
+      contact: 'www.seattleAuto.com'
+    };
+
+    newCompanyId = v4();
+    newMasterCompanyList[newCompanyId] = {
+      name:'Seattle Fi',
+      utility:'Internet',
+      contact:'www.seattleFi.com'
+    };
+
     this.state = {
-      loaded: false,
       masterCompanyList: newMasterCompanyList,
+      selectedCompany: null
       
-    }
+    };
     this.handleAddingNewCompanyToList = this.handleAddingNewCompanyToList.bind(this);
+    this.handleChangingSelectedCompany = this.handleChangingSelectedCompany.bind(this);
+    this.handleEditCompany = this.handleEditCompany.bind(this);
   }
 
   componentWillMount(){
@@ -56,6 +94,16 @@ class App extends React.Component {
     this.setState({selectedCompany: companyId});
   }
 
+  handleManageCompany(managedCompany) {
+    const newMasterCompanyList = Object.assign({}, this.state.masterCompanyList, {[managedCompany.id]: managedCompany});
+    this.setState({masterCompanyList: newMasterCompanyList});
+  }
+
+  handleEditCompany(updatedCompany) {
+    const newMasterCompanyList = Object.assign({}, this.state.masterCompanyList, {[updatedCompany.id]: updatedCompany});
+    this.setState({masterCompanyList: newMasterCompanyList});
+  }
+
   render(){
     return (
       
@@ -76,9 +124,9 @@ class App extends React.Component {
             {/* <Route exact path={ROUTES.COMPANYLIST} render={()=><CompanyList companyList={this.state.masterCompanyList} onCompanySelection={this.handleChangingSelectedCompany}
             selectedCompany={this.state.selectedCompany}/>} />
                 <Route exact path={ROUTES.NEWCOMPANY} render={()=><NewCompanyForm onNewCompanyCreation={this.handleAddingNewCompanyToList} />} /> */}
-            <Route path='/CompanyList' render={()=><CompanyList companyList={this.state.masterCompanyList} onCompanySelection={this.handleChangingSelectedCompany}
-              selectedCompany={this.state.selectedCompany}/>} />
-            <Route exact path={ROUTES.NEWCOMPANY} component={NewCompanyForm} />
+            <Route path='/CompanyList' render={()=><CompanyList companyList={this.state.masterCompanyList}/>} />
+            <Route path='/edit' render={()=> <Edit onEditKeg={this.handleEditKeg}/>} />
+            <Route exact path={ROUTES.NEWCOMPANY} render={()=><NewCompanyForm onNewCompanyCreation={this.handleAddingNewCompanyToList} />} />
             <Route exact path={ROUTES.PAYMENTFORM} render={()=> this.state.loaded && <PaymentForm paymentForm={ window.SqPaymentForm } />} />
           </Switch>
         </div>

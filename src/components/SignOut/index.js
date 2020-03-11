@@ -1,10 +1,8 @@
 import React from 'react';
 import { withFirebase } from '../Firebase';
-import { Link } from 'react-router-dom';
+import { FaSignOutAlt } from 'react-icons/fa';
 
 const SignOutButton = ({ firebase }) => (
-  <Link type="button" onClick={firebase.doSignOut}>
-    Sign Out
-  </Link>
+  <FaSignOutAlt style={{fontSize: '30px'}} type="button" onClick={firebase.doSignOut} />
 );
 export default withFirebase(SignOutButton);
