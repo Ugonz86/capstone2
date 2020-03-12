@@ -16,28 +16,30 @@ function NewCompanyForm(props){
   }
 
   return (
-    <div style={{backgroundColor: '#edeff5'}}>
-      <h1>Add A New Company</h1>
-      <form onSubmit={handleNewCompanyFormSubmission}>
-        <input
-          type='text'
-          id='name'
-          placeholder='Company'
-          ref={(input) => {_name = input;}}/>
+    <div class="container">
+      <div id="form-container">
+        <h1>Add A New Company</h1>
+        <form onSubmit={handleNewCompanyFormSubmission}>
+          <input
+            type='text'
+            id='name'
+            placeholder='Company'
+            ref={(input) => {_name = input;}}/>
 
-        <input
-          type='text'
-          id='utility'
-          placeholder='Utility'
-          ref={(input) => {_utility = input;}}/>
+          <input
+            type='text'
+            id='utility'
+            placeholder='Utility'
+            ref={(input) => {_utility = input;}}/><br/><br/>
 
-        <input
-          type='text'
-          id='contact'
-          placeholder='Contact Info'
-          ref={(input) => {_contact = input;}}/>
-        <button type='submit'>Submit New Company</button>
-      </form>
+          <input
+            type='text'
+            id='contact'
+            placeholder='Contact Info'
+            ref={(input) => {_contact = input;}}/><br/><br/>
+          <button type='submit'>Submit New Company</button>
+        </form>
+      </div>
     </div>
   );
 }

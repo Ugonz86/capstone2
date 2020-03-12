@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button} from 'react-bootstrap';
 import Edit from './Edit';
 import { FiEdit } from 'react-icons/fi';
 

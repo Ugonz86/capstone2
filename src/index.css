@@ -34,3 +34,20 @@ a:hover, a:focus, a:active {
   text-align: center;
   color: #333;
 }
+
+input{
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 200px;
+}
+button{
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+}
+button:hover{
+  background-color: #333;
+  color: #edeff5;
+}

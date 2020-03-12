@@ -11,7 +11,7 @@ function AccountPage () {
       <AuthUserContext.Consumer>
       {authUser => (
         <div style={{backgroundColor: '#edeff5'}}>
-
+        <br/>
         <div style={{backgroundColor: '#4265ff', borderRadius: '10px', margin: 'auto', width: '50%', padding: '10px', color: '#edeff5'}}>
         <h1 style={{color: '#333'}}>Account Settings</h1>
           <h3>Hello {authUser.email}!</h3>
@@ -21,6 +21,7 @@ function AccountPage () {
           <PasswordChangeForm />
           <br/><br/>
           </div>
+          <br/>
           <style global jsx>{`
             input {
               font-size: 15px;

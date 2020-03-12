@@ -3,11 +3,17 @@ import { Link, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import '../../index.css';
 
 const SignUpPage = () => (
-  <div>
-    <h1>SignUp</h1>
-    <SignUpForm />
+  <div class="container">
+  <br/>
+    <div id="form-container">
+      <h1>SignUp</h1>
+      <SignUpForm />
+      <br/>
+    </div>
+    <br/>
   </div>
 );
 
@@ -74,28 +80,28 @@ const INITIAL_STATE = {
           onChange={this.onChange}
           type="text"
           placeholder="Full Name"
-        />
+        /><br/><br/>
         <input
           name="email"
           value={email}
           onChange={this.onChange}
           type="text"
           placeholder="Email Address"
-        />
+        /><br/><br/>
         <input
           name="passwordOne"
           value={passwordOne}
           onChange={this.onChange}
           type="password"
           placeholder="Password"
-        />
+        /><br/><br/>
         <input
           name="passwordTwo"
           value={passwordTwo}
           onChange={this.onChange}
           type="password"
           placeholder="Confirm Password"
-        />
+        /><br/><br/>
         <button disabled={isInvalid} type="submit">Sign Up</button>
         {error && <p>{error.message}</p>}
       </form>
@@ -103,9 +109,9 @@ const INITIAL_STATE = {
   }
 }
 const SignUpLink = () => (
-  <p>
-    Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
-  </p>
+  <Link style={{color:'#edeff5'}}>
+    Don't have an account? <Link style={{color:'#edeff5'}} to={ROUTES.SIGN_UP}>Sign Up</Link>
+  </Link>
 );
 
 const SignUpForm = compose(

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SignOutButton from '../SignOut';
 import * as ROUTES from '../../constants/routes';
 import { AuthUserContext } from '../Session';
-import { FaHome, FaListAlt, FaUserCog, FaMoneyCheck } from 'react-icons/fa';
+import { FaHome, FaListAlt, FaUserCog, FaMoneyCheck, FaSignInAlt } from 'react-icons/fa';
 
 const Navigation = () => (
   <div className="headerStyle">
@@ -39,7 +39,7 @@ const NavigationAuth = () => (
 );
 
 const NavigationNonAuth = () => (
-  <Link style={{float: 'right'}} to={ROUTES.SIGN_IN}>Sign In</Link>
+  <Link style={{float: 'right', fontSize: '30px'}} to={ROUTES.SIGN_IN}><FaSignInAlt /></Link>
 );
 
 export default Navigation;

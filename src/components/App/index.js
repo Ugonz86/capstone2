@@ -4,6 +4,7 @@ import Navigation from '../Navigation';
 import LandingPage from '../Landing';
 import SignUpPage from '../SignUp';
 import SignInPage from '../SignIn';
+import SignOutPage from '../SignOut';
 import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
@@ -115,10 +116,10 @@ class App extends React.Component {
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
             <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
             <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
+            <Route exact path={ROUTES.SIGN_OUT} component={SignOutPage} />
             <Route exact path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
             <Route exact path={ROUTES.HOME} component={HomePage} />
             <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
-          
             <Route exact path={ROUTES.PAYMENTS} component={Payments} />
             {/* <Route exact path={ROUTES.ADMIN} component={AdminPage} /> */}
             {/* <Route exact path={ROUTES.COMPANYLIST} render={()=><CompanyList companyList={this.state.masterCompanyList} onCompanySelection={this.handleChangingSelectedCompany}
