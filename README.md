@@ -16,8 +16,9 @@ In command line, run the following:
 4. Open webpage
     $ In your browser, this should load: http://localhost:3000/
 5. You may skip these steps and click on the following link:
-    ## [Click here to view firebase deployed site](https://ebills-2dd61.firebaseapp.com/)
 ```
+## [Click here to view firebase deployed site](https://ebills-2dd61.firebaseapp.com/)
+
 ### Specs
 ```
 1. Users can sign up and log in.
