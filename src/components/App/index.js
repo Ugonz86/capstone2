@@ -84,6 +84,13 @@ class App extends React.Component {
       date: '05-28-2020',
       amount: '100'
     };
+
+    newPaymentId = v4();
+    newMasterPaymentList[newPaymentId] = {
+      name:'SeattleAuto',
+      date: '05-30-2020',
+      amount: '300'
+    };
     
     this.handleAddingNewCompanyToList = this.handleAddingNewCompanyToList.bind(this);
     this.handleAddingNewPaymentToList = this.handleAddingNewPaymentToList.bind(this);
@@ -148,6 +155,7 @@ class App extends React.Component {
       <Router>
         <div>
         <Navigation />
+        <br/><br/>
           <Switch>
             <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
             <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
@@ -165,6 +173,7 @@ class App extends React.Component {
             <Route exact path={ROUTES.NEWPAYMENT} render={()=><NewPaymentForm onNewPaymentCreation={this.handleAddingNewPaymentToList} />} />
             <Route exact path={ROUTES.PAYMENTFORM} render={()=> this.state.loaded && <PaymentForm paymentForm={ window.SqPaymentForm } />} />
           </Switch>
+          <br/><br/>
           <Footer />
         </div>
       </Router>

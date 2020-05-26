@@ -19,7 +19,7 @@ const Navigation = () => (
 
 const NavigationAuth = () => (
   <Fade top>
-  <div style={{  textAlign: 'center', marginTop:'25px' }}>
+  <div style={{  textAlign: 'center', marginTop:'50px' }}>
     <Link to={ROUTES.HOME}><FaHome style={{fontSize: '30px', marginRight: '60px', title:'Home'}} /></Link>
     <Link to={ROUTES.ACCOUNT}><FaUserCog style={{fontSize: '30px', marginRight: '60px'}} /></Link>
     <Link to={ROUTES.COMPANYLIST}><FaListAlt style={{fontSize: '28px', marginRight: '60px'}} /></Link>

@@ -18,7 +18,6 @@ class Payment extends React.Component {
         <p style={{color: 'lightgrey'}}>Amount</p><h2>${this.props.amount}</h2>
         <br/>
         <Link className="payButton" to="/PAYMENTFORM">Pay Now</Link>
-        {/* <button to="/PAYMENTFORM" type="button">PAY NOW</button> */}
         <br/><br/><br/>
         
         <style jsx global>{`

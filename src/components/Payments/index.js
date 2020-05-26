@@ -29,27 +29,27 @@ function Payments () {
   <br/>
   <div class="grid-container">
 
-      <div className="Option1" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', borderRadius: '10px',  height: '100px', width: '200px', boxShadow: 'grey 1px 1px 3px' }}>
-        <h2><Link style={{color: 'white', textAlign: 'center', margin: 'auto', textShadow: '#0b2180 1px 1px 3px',}} to={ROUTES.NEWPAYMENTFORM}>Schedule Payment</Link></h2>
+      <div className="Option1" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', borderRadius: '10px',  height: '100px', width: '250px', boxShadow: 'grey 1px 1px 3px' }}>
+        <h2><Link style={{color: 'white', textAlign: 'center', margin: 'auto', textShadow: '#0b2180 1px 1px 3px'}} to={ROUTES.NEWPAYMENTFORM}>Schedule Payment</Link></h2>
       </div>
       
-      <div className="Option2" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px', width: '200px', boxShadow: 'grey 1px 1px 3px',}}>
+      <div className="Option2" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px', width: '250px', boxShadow: 'grey 1px 1px 3px',}}>
         <h2><Link style={{color: 'white', textAlign: 'center',  margin: 'auto', textShadow: '#0b2180 1px 1px 3px'}} to={ROUTES.PAYMENTSLIST}>Payment List</Link></h2>
       </div>
 
-      <div className="Option3" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px', width: '200px', boxShadow: 'grey 1px 1px 3px', }}>
+      <div className="Option3" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px', width: '250px', boxShadow: 'grey 1px 1px 3px', }}>
         <h2 style={{textShadow: '#0b2180 1px 1px 3px'}}>Upcoming Payments</h2>
       </div>
 
-      <div className="Option4" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '200px',boxShadow: 'grey 1px 1px 3px', }}>
+      <div className="Option4" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '250px',boxShadow: 'grey 1px 1px 3px', }}>
           <h2 style={{textShadow: '#0b2180 1px 1px 3px'}}>Set Auto Payment</h2>
       </div>
 
-      <div className="Option5" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '200px',boxShadow: 'grey 1px 1px 3px', }}>
+      <div className="Option5" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '250px',boxShadow: 'grey 1px 1px 3px', }}>
           <h2 style={{textShadow: '#0b2180 1px 1px 3px'}}>Receipts</h2>
       </div>
 
-      <div className="Option6" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '200px',boxShadow: 'grey 1px 1px 3px',  }}>
+      <div className="Option6" style={{backgroundColor: '#4265ff', padding: '25px', margin: 'auto', color: 'white', borderRadius: '10px', height: '100px',  width: '250px',boxShadow: 'grey 1px 1px 3px',  }}>
           <h2 style={{textShadow: '#0b2180 1px 1px 3px'}}>Resources</h2>
       </div>
   </div>
