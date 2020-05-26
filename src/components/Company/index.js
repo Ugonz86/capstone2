@@ -7,18 +7,19 @@ class Company extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-     
       edit: false,
     };
   }
 
   render() {
   return (
+    <div >
+
     <div className="companyStyle">
-      <h4>{this.props.utility}</h4>
-      <h3>{this.props.name}</h3>
-      <h4><em>{this.props.contact}</em></h4>
-     
+      <p style={{color: 'lightgrey'}}>Company</p> <h2>{this.props.name}</h2>
+      <p style={{color: 'lightgrey'}}>Utility</p><h2>{this.props.utility}</h2>
+      <p style={{color: 'lightgrey'}}>Contact</p><h2>{this.props.contact}</h2>
+    
       <FiEdit className="editButton" onClick={() => this.setState({edit: !this.state.edit})} Edit Company />
         {this.state.edit ?
           <Edit 
@@ -32,22 +33,24 @@ class Company extends React.Component {
           background-color: #4265ff;
           border-radius: 10px;
           margin: auto;
-          width: 50%;
-          padding: 10px;
+          width: 75%;
+          {/* padding: 10px; */}
           margin-bottom: 20px;
           color: #edeff5;
+          box-shadow: grey 1px 1px 3px;
         }
+
         .editButton{
           background-color: transparent;
           border: none;
           color: #edeff5;
         }
-        .editButton:hover {
-          color: #333;
-        }     
       `}</style>
       <br/><br/>
+      </div>
+      <br/><br/>
     </div>
+    
    
     );
   }

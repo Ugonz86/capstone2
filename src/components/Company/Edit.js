@@ -2,14 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Button} from 'react-bootstrap';
 
-var editStyle = {
-  
-};
-
-var form = {
-  
-};
-
 class Edit extends React.Component {
   constructor(props) {
     super(props);
@@ -36,14 +28,14 @@ class Edit extends React.Component {
 
   render () {
     return (
-      <div utility={editStyle}>
-        <div className="text-box">
+      <div>
+        <div>
           <h1>Edit Company</h1>
-          <form onSubmit={this.handleEditCompany} utility={form}>
+          <form onSubmit={this.handleEditCompany}>
 
           <input style={{borderRadius: '5px', outline: 'none', border: '1px solid grey', width: '200px', padding: '10px'}}
               type="text" placeholder="Utility" defaultValue={this.utility} id="utility"
-              ref={(input) => {this.utility = input;}}/>         
+              ref={(input) => {this._utility = input;}}/>         
             <br/><br/>
 
             <input style={{borderRadius: '5px', outline: 'none', border: '1px solid grey', width: '200px', padding: '10px'}}
@@ -60,13 +52,13 @@ class Edit extends React.Component {
             <style jsx global>{`
               .button3 {
                 border-radius: 5px;
-                color: #333;
+               
                 border: none;
                 font-size: 20px;
               }
               .button3:hover {
-                background-color: black;
-                color: white;
+                background-color: #edeff5;
+                color: #333;
                 border: none;
               }
               .button3:focus {

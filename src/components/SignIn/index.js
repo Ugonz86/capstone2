@@ -9,14 +9,12 @@ import '../../index.css';
 
 const SignInPage = () => (
   <div class="container">
-  <br/>
   <div id="form-container">
     <h1>Sign In</h1>
     <SignInForm />
     <PasswordForgetLink />
     <SignUpLink />
     </div>
-    <br/>
   </div>
 );
 

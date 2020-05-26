@@ -7,7 +7,7 @@ const PasswordForgetPage = () => (
   <div class="container">
   <br/>
     <div id="form-container">
-      <h1>PasswordForget</h1>
+      <h1>Password Reset</h1>
       <PasswordForgetForm />
     </div>
     <br/>

@@ -14,8 +14,7 @@ code {
 
 .headerStyle {
   display: table;
-  margin-bottom: 20px;
-  /* margin-top: 25px; */
+  margin-bottom: 10px;
   color: #333;
   width: 100%;
 }
@@ -41,13 +40,53 @@ input{
   padding: 10px;
   width: 200px;
 }
+select {
+  border-radius: 30px;
+  border: none;
+  height: 30px;
+  width: 220px;
+  outline: none;
+}
 button{
   border-radius: 10px;
   border: none;
   padding: 10px;
   width: 100px;
-}
-button:hover{
   background-color: #333;
   color: #edeff5;
+}
+button:hover{
+  background-color: #edeff5;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 5px;
+  grid-template-areas: "Option1 Option2 Option3" "Option4 Option5 Option6";
+}
+
+.Option1 { grid-area: Option1; }
+
+.Option2 { grid-area: Option2; }
+
+.Option3 { grid-area: Option3; }
+
+.Option4 { grid-area: Option4; }
+
+.Option5 { grid-area: Option5; }
+
+.Option6 { grid-area: Option6; }
+
+
+.footerStyle {
+  top: 95%;
+  height: 50px;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }

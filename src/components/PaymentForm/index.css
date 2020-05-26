@@ -1,11 +1,10 @@
-.container {
-background-color: #edeff5;
-}
+
 #form-container {
 background-color: #4265ff;
+box-shadow: #0b2180 1px 1px 3px;
 border-radius: 10px;
 margin: auto;
-width: 50%;
+width: 75%;
 padding: 10px;
 }
 
@@ -76,7 +75,6 @@ display:none;
 } */
 
 body, html {
-color: #373F4A;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight: normal;
 height: 100%;
@@ -90,7 +88,7 @@ border: 0;
 
 button {
 border: 0;
-color: #333;
+
 }
 
 hr {
