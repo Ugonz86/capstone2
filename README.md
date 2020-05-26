@@ -2,7 +2,7 @@
 ##### by _**Uriel Gonzalez**_
 
 ### Description
-I wanted to create a model for a financial website in React.js. Something essential that I would use in real life on a daily basis. With that in mind I decided to create a website where users can add or select a utility company and pay bills.
+I wanted to create a model for a financial website in React.js. Something essential that I would use. With that in mind I decided to create a website where users can pay bills their utility bills.
 
 On eBills, users can:
 ```
@@ -33,10 +33,10 @@ In command line, run the following:
 ```
 
 ### Known Bugs
-* The code for the payments part is broken due to technical issues on my end but it will be fixed and committed shortly.
+* Unable to mayke real payments. I need authorization from SquareUp.
 
 ### Technologies Used
-* Git, GitHub, ReactJS, Webpack, Firebase & SquareUp.
+* Terminal, GitHub, React.js, Webpack, Firebase & SquareUp.
 
 ### Support and Contact Details
 * _ugonzalez86@gmail.com_

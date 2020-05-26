@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from '../Navigation';
-import Footer from '../footer';
 import SignUpPage from '../SignUp';
 import SignInPage from '../SignIn';
 import SignOutPage from '../SignOut';
@@ -173,8 +172,6 @@ class App extends React.Component {
             <Route exact path={ROUTES.NEWPAYMENT} render={()=><NewPaymentForm onNewPaymentCreation={this.handleAddingNewPaymentToList} />} />
             <Route exact path={ROUTES.PAYMENTFORM} render={()=> this.state.loaded && <PaymentForm paymentForm={ window.SqPaymentForm } />} />
           </Switch>
-          <br/><br/>
-          <Footer />
         </div>
       </Router>
     );
