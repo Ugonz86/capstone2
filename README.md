@@ -18,6 +18,8 @@ On eBills, users can:
 ### Component Planning
 ![_components](_components.png)
 
+## [Click here to view firebase deployed site](https://ebills-2dd61.firebaseapp.com/)
+
 ### Installation
 ```
 In command line, run the following:

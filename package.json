@@ -10,6 +10,7 @@
     "prop-types": "^15.5.10",
     "react": "^16.13.0",
     "react-bootstrap": "^0.32.4",
+    "react-devtools": "^4.8.2",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
     "react-payment-icons": "^1.2.6",

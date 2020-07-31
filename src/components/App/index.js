@@ -153,9 +153,11 @@ class App extends React.Component {
     return (
       <Router>
         <div>
+        <h1>HELLO</h1>
         <Navigation />
         <br/><br/>
           <Switch>
+          
             <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
             <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
             <Route exact path={ROUTES.SIGN_OUT} component={SignOutPage} />

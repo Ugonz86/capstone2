@@ -13,3 +13,4 @@ export const NEWPAYMENTFORM = '/newpaymentform';
 export const NEWPAYMENT = '/newpayment';
 export const PAYMENTSPAGE = '/paymentspage';
 export const PAYMENTSLIST = '/paymentslist';
+export const LANDING = '/';
