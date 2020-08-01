@@ -1,16 +1,16 @@
 {
-  "name": "react-firebase-authentication",
+  "name": "ebills",
+  "homepage": "https://ebills-2dd61.web.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "firebase": "^7.14.5",
+    "firebase": "^7.10.0",
     "prop-types": "^15.5.10",
     "react": "^16.13.0",
     "react-bootstrap": "^0.32.4",
-    "react-devtools": "^4.8.2",
     "react-dom": "^16.13.0",
     "react-icons": "^3.9.0",
     "react-payment-icons": "^1.2.6",
@@ -18,13 +18,19 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "recompose": "^0.30.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "html2canvas": "^1.0.0-rc.5",
+    "html2canvas-render-offscreen": "0.0.3",
+    "http2": "^3.3.7",
+    "jspdf": "^1.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "firebase public"
   },
   "browserslist": {
     "production": [
@@ -39,6 +45,10 @@
     ]
   },
   "devDependencies": {
-    "react-hot-loader": "^3.0.0-beta.7"
+    "react-hot-loader": "^3.0.0-beta.7",
+    "typescript": "^3.9.3",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5"
   }
 }

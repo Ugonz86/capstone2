@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <meta name="theme-color" content="#000000" />
     <title>eBills</title>
 
@@ -25,7 +26,7 @@
         width: 50px;
         height: 50px;
         animation: spin 1s linear infinite;
-        animation-duration: 3s;
+        animation-duration: 5s;
         margin-left: 46%
       }
       @keyframes spin {
@@ -36,6 +37,7 @@
         color: #4265ff;
         font-weight: bold;
         font-style: italic;
+        letter-spacing: 3px;
       }
       #root{
         margin: auto;
@@ -59,10 +61,11 @@
         body { border-top: 16px solid #ffa100; }
       }
     </style>
+    <link rel="manifest" href="manifest.json" />
   </head>
   <body>
      <div id="root">
-      <h1 class="loadingLogo" >Welcome to <span class=logoSpam>e</span> Bills!</h1>
+      <h1 class="loadingLogo" >Welcome to <span class=logoSpam>e</span>Bills!</h1>
        
       <div class="loader"></div>
      </div>
