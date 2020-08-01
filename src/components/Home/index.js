@@ -20,7 +20,6 @@ const HomePage = () => (
           `}</style>
     <div style={{fontWeight: 'bold'}}>
       <Fade top>
-      <br/>
         <Link style={{fontSize: '70px', textShadow: 'grey 1px 1px 3px' }} to={ROUTES.HOME}><span style={{ color: '#4265ff', fontWeight: 'bold', fontStyle: 'italic', textShadow: '#0b2180 1px 1px 3px'}}>e</span>Bills</Link><br/>
       </Fade>
     </div>

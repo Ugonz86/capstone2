@@ -1,3 +1,9 @@
+.root {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,7 +20,6 @@ code {
 
 .headerStyle {
   display: table;
-  margin-bottom: 10px;
   color: #333;
   width: 100%;
 }
@@ -55,10 +60,13 @@ button{
   background-color: #333;
   color: #edeff5;
 }
+<<<<<<< HEAD
+=======
 button:hover{
   background-color: #edeff5;
   color: #333;
 }
+>>>>>>> 2bd2d52... Moving capstone2 code into new repository
 
 .grid-container {
   display: grid;
