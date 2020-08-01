@@ -12,11 +12,9 @@ function Payments () {
           border-radius: 10px;
           margin: auto;
           width: 75%;
-          {/* padding: 10px; */}
           margin-bottom: 20px;
           color: #edeff5;
         }
-
       `}</style>
     <div style={{backgroundColor: '#4265ff',
     borderRadius: '10px',

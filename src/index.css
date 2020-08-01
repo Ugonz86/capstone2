@@ -60,13 +60,10 @@ button{
   background-color: #333;
   color: #edeff5;
 }
-<<<<<<< HEAD
-=======
 button:hover{
   background-color: #edeff5;
   color: #333;
 }
->>>>>>> 2bd2d52... Moving capstone2 code into new repository
 
 .grid-container {
   display: grid;
