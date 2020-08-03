@@ -2,7 +2,7 @@
 ##### by _**Uriel Gonzalez**_
 
 ### Description
-As a business minded person I wanted to build a service of essential use for everyone. A model for a financial website I could potentially sell after full development. With that in mind I decided to start building a website where users can pay their utility bills, all in one place. This project is currently in progress and constantly changing as my learning advances.
+As a business minded person I wanted to build a service of essential use for everyone. A concept for a financial website I could potentially sell after full development. With that in mind I decided to start building a website where users can pay their utility bills, all in one place. This project is currently in progress and constantly changing as my learning advances.
 
 On eBills, users can:
 ```
