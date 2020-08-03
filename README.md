@@ -6,19 +6,17 @@ I wanted to create a model for a financial website in React.js. Something essent
 
 On eBills, users can:
 ```
-* Log In/Off, Sign Up and reset their password. Authentication developed with Firebase.
-* Pick a pre existing (hard coded/fake) utility company
-* Add/Edit a company
-* Set up a payment
-* Make a payment. The code with the capability is done (see the payment form js file under Components), but I need to go through the authorization process and other steps at SquareUp, which is the platform I used.
-* See their payment history
-* Project in progress, more functions and better styling coming soon.
+* Log In/Off, Sign Up and reset their password.
+* Read a list of pre existing (hard coded) utility companies.
+* Add/Edit a utility company.
+* Set up/schedule a payment.
+* To make a payment; The code with the capability is created (see the payment form js file under Components), but I need activate payment authorization at SquareUp in order to make real payments, which is the platform I used.
+* See the user's payment history.
+* Project in progress, more functions and better styling in progress.
 ```
 
 ### Component Planning
 ![_components](_components.png)
-
-## [Click here to view firebase deployed site](https://ebills-2dd61.firebaseapp.com/)
 
 ### Installation
 ```
@@ -33,6 +31,7 @@ In command line, run the following:
     $ In your browser, this should load: http://localhost:3000/
 5. You may skip these steps and click on the following link:
 ```
+## [Click here to view Firebase deployed site](https://ebills-2dd61.firebaseapp.com/)
 
 ### Known Bugs
 * Unable to mayke real payments. I need authorization from SquareUp.
